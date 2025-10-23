@@ -26,7 +26,7 @@ const baseURL = import.meta.env.VITE_BACKEND_URL
 	? import.meta.env.VITE_BACKEND_URL 
 	: import.meta.env.MODE === "development" 
 		? "http://localhost:5000" 
-		: "/";
+		: "https://wavebackend.vercel.app";
 
 const socket = io(baseURL, {
 	autoConnect: false, // only connect if user is authenticated
